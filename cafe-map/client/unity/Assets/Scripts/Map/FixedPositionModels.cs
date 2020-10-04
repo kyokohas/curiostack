@@ -57,7 +57,6 @@ namespace CafeMap.Map
                 var position = mapsService.Coords.FromLatLngToVector3(new LatLng(model.Latitude, model.Longitude));
                 instantiated.transform.position = position;
                 instantiated.transform.Rotate(Vector3.up, model.Rotation);
-                instantiated.transform.Translate(0, -100, 0);
                 instantiated.transform.localScale = new Vector3(model.Scale, model.Scale, model.Scale);
                 viewportService.RegisterMovedObject(instantiated);
                 renderedModels.Add(instantiated);

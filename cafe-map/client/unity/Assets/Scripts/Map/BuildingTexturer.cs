@@ -174,12 +174,13 @@ namespace CafeMap.Map
             mapsService.Events.ExtrudedStructureEvents.DidCreate.AddListener(
                 args =>
                 {
-                    AssignNineSlicedMaterials(args.GameObject);
-                    /*
+                    
+                    
                     if (!buildingModels.ContainsKey(args.MapFeature.Metadata.Usage))
                     {
+                        AssignNineSlicedMaterials(args.GameObject);
                     }
-                    */
+                    
                 });
         }
 
